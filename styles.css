@@ -1,0 +1,95 @@
+:root {
+    --main-color: #f54b29;
+}
+* {
+    margin: 0;
+    padding: 0;
+}
+.cal-sans-regular {
+  font-family: "Cal Sans", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+body {
+    font-size: 16px;
+    font-family: "Cal Sans", sans-serif;
+    letter-spacing: 0.1rem;
+}
+header,footer {
+    height: 15vh;
+    width: 100vw;
+    background: var(--main-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.main-head {
+    height: 25vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+nav h1 {
+    font-size: 4rem; 
+    text-align: center;
+}
+nav ul>li {
+    list-style: none;
+    text-decoration: none;
+}
+
+main {
+    text-align: center;
+    padding: 2rem 4rem;
+    margin-top: 2rem;
+}
+main > h2 {
+    text-decoration: underline;
+    padding-bottom: 0.5rem;
+}
+
+.container {
+    display: flex;
+    margin: 2rem 0;
+}
+.card {
+    border: 2px solid var(--main-color);
+    background: var(--main-color);
+    padding: 1.5rem;
+    flex: 1;
+    margin: 3rem 1rem;
+    border-radius: 1rem;
+}
+.card h3 {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+}
+.card span {
+    font-weight: bold;
+    font-style: italic;
+    color: white;
+    background: black;
+    padding: 0.3rem;
+    margin-bottom: 1rem;
+    display: inline-block;
+}
+.card ul > li {
+    padding: 0.2rem;
+}
+ul > li {
+    list-style: none;
+}
+
+@media screen and (max-width: 600px) {
+    .container {
+        flex-direction: column;
+    }
+    .card {
+        margin: 1rem 2rem;
+    }
+    nav h1 {
+        font-size: 2rem;
+    }
+}
