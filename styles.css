@@ -88,6 +88,24 @@ ul > li {
     list-style: none;
 }
 
+footer.social {
+    height: 10rem;
+    margin-top: 5rem;
+    padding: 2rem 3rem;
+    color: #000;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+.contacts h5 {
+    font-weight: bold;
+    text-decoration: underline;
+}
+.contacts span {
+    font-size: 0.9rem;
+}
+
 @media screen and (max-width: 600px) {
     .container {
         flex-direction: column;
