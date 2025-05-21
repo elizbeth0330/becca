@@ -94,6 +94,13 @@ ul > li {
     }
     .card {
         margin: 1rem 2rem;
+        opacity: 0;
+        transform: translateY(50px);
+        transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+    }
+    .card.is-visible {
+        opacity: 1;
+        transform: translateY(0);
     }
     nav h1 {
         font-size: 2rem;
