@@ -2,9 +2,15 @@
     --main-color: #C03221;
     --white: #F7F7FF;
 }
+html {
+    box-sizing: border-box;
+}
 * {
     margin: 0;
     padding: 0;
+}
+*, *::before, *::after {
+    box-sizing: inherit;
 }
 .cal-sans-regular {
   font-family: "Cal Sans", sans-serif;
