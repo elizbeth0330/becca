@@ -1,5 +1,6 @@
 :root {
-    --main-color: #f54b29;
+    --main-color: #C03221;
+    --white: #F7F7FF;
 }
 * {
     margin: 0;
@@ -15,6 +16,7 @@ body {
     font-size: 16px;
     font-family: "Cal Sans", sans-serif;
     letter-spacing: 0.1rem;
+    background: var(--white);
 }
 header,footer {
     height: 15vh;
@@ -23,6 +25,7 @@ header,footer {
     display: flex;
     justify-content: center;
     align-items: center;
+    color: var(--white);
 }
 .main-head {
     height: 25vh;
@@ -59,9 +62,12 @@ main > h2 {
     background: var(--main-color);
     padding: 1.5rem;
     flex: 1;
-    margin: 3rem 1rem;
+    margin: 3rem 2rem;
     border-radius: 1rem;
+    color: var(--white);
+    filter: drop-shadow(0.4rem 0.4rem 0.1rem #000);
 }
+
 .card h3 {
     font-size: 1.5rem;
     margin-bottom: 0.5rem;
@@ -69,7 +75,7 @@ main > h2 {
 .card span {
     font-weight: bold;
     font-style: italic;
-    color: white;
+    color: var(--white);
     background: black;
     padding: 0.3rem;
     margin-bottom: 1rem;
