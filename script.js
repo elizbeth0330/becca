@@ -7,7 +7,7 @@ if ('IntersectionObserver' in window) {
     };
     const observer = new IntersectionObserver((entries, observer) => {
         entries.forEach(entry => {
-            if (entry.isIntersecting && window.matchMedia("(max-width: 600px)").matches) {
+            if (entry.isIntersecting && window.matchMedia("(max-width: 800px)").matches) {
                 entry.target.classList.add('is-visible');
                 observer.unobserve(entry.target);
             }
